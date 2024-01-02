@@ -1,0 +1,156 @@
+/* ==========
+global
+========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  /* border: 1px solid red; */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-container {
+  padding-inline: 1rem;
+  margin-inline: auto;
+  max-width: 500px;
+}
+
+/* ==========
+buttons
+========== */
+
+.nav-btn {
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  line-height: .5;
+  font-size: 3.5rem;
+}
+
+.open-nav {
+  padding-bottom: .75rem;
+}
+
+.close-nav {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+/* ==========
+typography
+========== */
+
+header {
+  color: white;
+}
+
+.nav-link,
+.social-link,
+.book-tel {
+  color: #fff;
+}
+
+.nav-link,
+.book-tel {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.current-link {
+  color: #c8a666
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.accent-txt {
+  color: #c8a666;
+}
+
+/* ==========
+style
+========== */
+
+/* header */
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+.header-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-container {
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.social-link {
+  margin-right: 1rem;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  background-color: #000;
+  transition: .3s;
+}
+
+.open-navigation {
+  transform: translateX(-100%);
+}
+
+.nav-links {
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+
+.book-tel {
+  border: 2px solid #c8a666;
+  padding: .75rem 2rem;
+  border-radius: 3px;
+}
+
+.hero {
+  background-image: url(./img/barber-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #757575;
+  height: 100dvh;
+}
+
+/* ==========
+media quries
+========== */
