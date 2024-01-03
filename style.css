@@ -88,6 +88,11 @@ typography
   color: #c8a666;
 }
 
+.social-link:hover,
+.social-link:focus {
+  color: #fff;
+}
+
 .nav-link,
 .book-link {
   font-size: 1.25rem;
@@ -123,7 +128,7 @@ typography
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1;
   letter-spacing: 1px;
 }
@@ -193,9 +198,8 @@ style
 }
 
 .book-link {
-  border: 2px solid #c8a66692;
+  border: 2px solid #c8a666;
   padding: 1rem 3rem;
-  border-radius: 3px;
   transition: .3s;
 }
 
@@ -218,7 +222,7 @@ style
   background-color: #757575;
   min-height: 100dvh;
   align-content: center;
-  padding-top: 6rem;
+  padding-top: 8rem;
 }
 
 .hero-top-font {
@@ -227,7 +231,7 @@ style
 }
 
 .hero-body {
-  margin-block: 2rem;
+  margin-block: 1rem;
 }
 
 .hero-btn {
@@ -237,6 +241,7 @@ style
   height: fit-content;
   cursor: pointer;
   transition: .3s;
+  color: #fff;
 }
 
 .hero-btn:hover,
@@ -248,3 +253,9 @@ style
 /* ==========
 media quries
 ========== */
+
+@media (min-height: 620px) {
+  .hero {
+    padding-top: 6rem;
+  }
+}
