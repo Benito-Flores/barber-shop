@@ -163,15 +163,6 @@ style
   align-items: center;
 }
 
-.social-container {
-  justify-content: center;
-  padding-block: 1.25rem 0;
-}
-
-.social-link {
-  margin-inline: 1rem;
-}
-
 .nav-container {
   position: fixed;
   width: 100%;
@@ -221,8 +212,8 @@ style
   background-blend-mode: multiply;
   background-color: #757575;
   min-height: 100dvh;
-  align-content: center;
-  padding-top: 8rem;
+  padding-top: 4rem;
+  align-content: space-between;
 }
 
 .hero-top-font {
@@ -250,12 +241,24 @@ style
   color: #ffffffc5;
 }
 
+.social-container {
+  justify-content: flex-start;
+}
+
+.social-link {
+  margin-right: 2rem;
+}
+
+.social-link:first-child {
+  margin-left: -.3rem;
+}
+
 /* ==========
 media quries
 ========== */
 
 @media (min-height: 620px) {
   .hero {
-    padding-top: 6rem;
+    padding-block: 2rem 1rem;
   }
 }
