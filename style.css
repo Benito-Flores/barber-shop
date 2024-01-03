@@ -12,6 +12,7 @@ global
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 li {
@@ -40,18 +41,20 @@ buttons
   border: 0;
   background-color: transparent;
   color: #fff;
-  line-height: .5;
+  line-height: 1;
   font-size: 3.5rem;
+  overflow: hidden;
 }
 
 .open-nav {
-  padding-bottom: .75rem;
+  padding: 0 0 .65rem .5rem;
 }
 
 .close-nav {
   position: absolute;
   right: 2rem;
   top: 2rem;
+  padding: 0 .7rem .2rem .7rem;
 }
 
 /* ==========
@@ -75,8 +78,18 @@ header {
   letter-spacing: 2px;
 }
 
+.nav-link {
+  transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #c8a666;
+}
+
 .current-link {
-  color: #c8a666
+  color: #c8a666;
+  transition: .5s;
 }
 
 .header-title {
@@ -106,12 +119,12 @@ header {
 }
 
 .social-container {
-  justify-content: flex-end;
-  padding-block: 1.25rem;
+  justify-content: center;
+  padding-block: 1.25rem 0;
 }
 
 .social-link {
-  margin-left: 1.5rem;
+  margin-inline: 1rem;
 }
 
 .nav-container {
@@ -135,7 +148,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   margin-left: 2rem;
-  margin-top: .2rem;
+  margin-top: 3rem;
 }
 
 .book-tel {
