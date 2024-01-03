@@ -80,9 +80,12 @@ typography
 /* header */
 
 .nav-link,
-.social-link,
 .book-tel {
   color: #fff;
+}
+
+.social-link {
+  color: #c8a666;
 }
 
 .nav-link,
