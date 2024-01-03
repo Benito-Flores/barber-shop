@@ -196,6 +196,12 @@ style
   border: 2px solid #c8a66692;
   padding: 1rem 3rem;
   border-radius: 3px;
+  transition: .3s;
+}
+
+.book-link:hover,
+.book-link:focus {
+  background-color: #c8a66690;
 }
 
 /* hero */
@@ -210,8 +216,9 @@ style
   background-position: 25%;
   background-blend-mode: multiply;
   background-color: #757575;
-  padding: 18rem 0 12rem 0;
   min-height: 100dvh;
+  align-content: center;
+  padding-top: 6rem;
 }
 
 .hero-top-font {
@@ -227,7 +234,15 @@ style
   border: 2px solid #c8a666;
   padding: 1rem 4rem;
   width: fit-content;
-  height: fit-content
+  height: fit-content;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #00000040;
+  color: #ffffffc5;
 }
 
 /* ==========
