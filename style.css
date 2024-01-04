@@ -1,6 +1,6 @@
-/* ==========
+/* ====================
 global
-========== */
+==================== */
 
 * {
   margin: 0;
@@ -17,6 +17,11 @@ p {
 a {
   text-decoration: none;
   display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 li {
@@ -39,9 +44,9 @@ button {
   grid-template-columns: minmax(1rem, 1fr) minmax(0px, 500px) minmax(1rem, 1fr)
 }
 
-/* ==========
+/* ====================
 buttons
-========== */
+==================== */
 
 .nav-btn {
   border: 0;
@@ -64,9 +69,37 @@ buttons
   border: 1px solid red;
 }
 
-/* ==========
+.btn {
+  background-color: #c8a666;
+  border: 2px solid #c8a666;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  transition: .3s;
+  color: #fff;
+}
+
+.book-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.book-btn {
+  width: fit-content;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ffffff1b;
+}
+
+.service-btn:hover,
+.service-btn:focus {
+  color: #c8a666;
+}
+
+/* ====================
 typography
-========== */
+==================== */
 
 .header,
 .hero,
@@ -139,14 +172,26 @@ typography
   opacity: .8;
 }
 
-.hero-btn {
-  font-size: 1.5rem;
+/* service */
+
+.service-title,
+.service-body,
+.service-btn {
+  font-family: 'Playfair Display', serif;
+}
+
+.service-title,
+.service-btn {
   font-weight: bold;
 }
 
-/* ==========
+.service-body {
+  color: #525252;
+}
+
+/* ====================
 style
-========== */
+==================== */
 
 /* header */
 
@@ -226,22 +271,6 @@ style
   margin-block: 1rem;
 }
 
-.hero-btn {
-  border: 2px solid #c8a666;
-  padding: 1rem 4rem;
-  width: fit-content;
-  height: fit-content;
-  cursor: pointer;
-  transition: .3s;
-  color: #fff;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #00000040;
-  color: #ffffffc5;
-}
-
 .social-container {
   justify-content: flex-start;
 }
@@ -254,9 +283,64 @@ style
   margin-left: -.3rem;
 }
 
-/* ==========
+/* services */
+
+.service-section {
+  background-color: #eaeaea;
+  padding-block: 5rem;
+}
+
+.service-section-title {
+  grid-column: 2;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 5rem;
+  color: #323232;
+}
+
+.service-container {
+  background-color: #fff;
+  grid-column: 2 / -2;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "img ."
+    "title title"
+    "body body"
+    "btn btn";
+  padding: 3rem;
+  box-shadow: 10px 10px 0px #d3d3d3;
+}
+
+.service-container:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+.service-img {
+  grid-area: img;
+  width: 50px;
+}
+
+.service-title {
+  grid-area: title;
+  margin-block: 1.5rem;
+}
+
+.service-body {
+  grid-area: body;
+}
+
+.service-btn {
+  grid-area: btn;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* ====================
 media quries
-========== */
+==================== */
 
 @media (min-height: 620px) {
   .hero {
