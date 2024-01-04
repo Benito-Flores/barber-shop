@@ -256,7 +256,7 @@ style
   background-position: 25%;
   background-blend-mode: multiply;
   background-color: #757575;
-  min-height: 100dvh;
+  min-height: 100svh;
   padding-top: 4rem;
   align-content: space-between;
 }
