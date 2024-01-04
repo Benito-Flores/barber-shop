@@ -6,7 +6,7 @@ global
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Playfair Display', serif;
   /* border: 1px solid red; */
 }
 
@@ -129,7 +129,7 @@ typography
 .nav-link,
 .book-link {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -149,7 +149,7 @@ typography
 
 .header-title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1;
 }
 
@@ -163,7 +163,8 @@ typography
 .hero-title {
   font-size: 3.5rem;
   line-height: 1;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 
 .hero-body {
@@ -179,7 +180,6 @@ typography
   font-family: 'Playfair Display', serif;
 }
 
-.service-title,
 .service-btn {
   font-weight: bold;
 }
