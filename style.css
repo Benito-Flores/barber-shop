@@ -372,15 +372,13 @@ style
   height: 250px;
   overflow: hidden;
   grid-template: 1rem 1fr 1rem / 1rem 1fr 1rem;
-  opacity: .85;
+  transition: background-color .3s ease;
 }
 
 .img-banner-container-one:hover,
 .img-banner-container-two:hover,
 .img-banner-container-three:hover {
-  background-color: #4d4d4d;
-  transition: 1s;
-  opacity: 1;
+  background-color: black;
 }
 
 .img-banner-container-one img,
@@ -388,14 +386,15 @@ style
 .img-banner-container-three img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  transition: 2s ease;
+  transition: transform 2.5s, opacity .3s;
+  opacity: .85;
 }
 
 .img-banner-container-one img:hover,
 .img-banner-container-two img:hover,
 .img-banner-container-three img:hover {
-  mix-blend-mode: multiply;
   transform: scale(1.1);
+  opacity: .5;
 }
 
 .img-banner-txt-one,
@@ -405,13 +404,14 @@ style
   grid-row: 2;
   justify-self: center;
   align-self: center;
-  display: none;
   z-index: 2;
   pointer-events: none;
+  opacity: 0;
+  transition: opacity .3s;
 }
 
 .img-banner-txt-appear {
-  display: block;
+  opacity: 1;
 }
 
 /* ====================
