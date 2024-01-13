@@ -372,13 +372,20 @@ style
   height: 250px;
   overflow: hidden;
   grid-template: 1rem 1fr 1rem / 1rem 1fr 1rem;
-  transition: background-color .3s ease;
+  background-color: #fff;
+  transition: background-color .3s;
 }
 
 .img-banner-container-one:hover,
 .img-banner-container-two:hover,
 .img-banner-container-three:hover {
-  background-color: black;
+  background-color: #000;
+}
+ 
+.img-banner-container-one:not(:hover),
+.img-banner-container-two:not(:hover),
+.img-banner-container-three:not(:hover){
+  transition: background-color .8s;
 }
 
 .img-banner-container-one img,
@@ -386,7 +393,7 @@ style
 .img-banner-container-three img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  transition: transform 2.5s, opacity .3s;
+  transition: transform 2.5s, opacity .8s;
   opacity: .85;
 }
 
